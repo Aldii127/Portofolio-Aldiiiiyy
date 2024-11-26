@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Mengurangi padding */
+    background-color: #333;
+    color: #fff;
+    height: 30px; /* Menetapkan tinggi navbar */
+}
+
+.profile {
+    display: flex;
+    align-items: center; /* Menjaga gambar dan nama sejajar */
+}
+
+.profile-photo {
+    width: 40px; /* Ukuran foto profil */
+    height: 40px; /* Ukuran foto profil */
+    border-radius: 50%; /* Membuat foto profil menjadi bulat */
+    margin-right: 10px; /* Jarak antara foto dan nama */
+}
+
+.nama {
+    font-size: 18px; /* Ukuran font nama */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 15px; /* Mengurangi margin antar item */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Ukuran font untuk link */
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 20px;
+}
+
+#about {
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang */
+}
+
+.about-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menjaga elemen sejajar secara vertikal */
+    justify-content: space-between; /* Memberikan jarak antara teks dan gambar */
+}
+
+.about-text {
+    flex: 1; /* Membiarkan teks mengambil ruang yang tersedia */
+    margin-right: 120px; /* Jarak antara teks dan gambar */
+}
+
+.about-photo {
+    flex: 1; /* Membiarkan gambar mengambil ruang yang tersedia */
+}
+
+.photo-about {
+    width: 50%; /* Mengatur lebar gambar */
+    height: auto; /* Mengatur tinggi secara otomatis untuk menjaga rasio */
+    border-radius: 8px; /* Menambahkan sudut melengkung pada gambar */
+}
+
+#about, #projects, #skills, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Membuat baris baru jika kolom tidak muat */
+    justify-content: space-between; /* Memberikan jarak antar kolom */
+}
+
+.project {
+    flex: 0 1 calc(50% - 10px); /* Mengatur lebar kolom menjadi 50% dengan margin */
+    margin: 5px; /* Margin antar proyek */
+    background-color: #f4f4f4; /* Warna latar belakang proyek */
+    border-radius: 5px; /* Sudut melengkung */
+    overflow: hidden; /* Menyembunyikan bagian yang melampaui batas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.project img {
+    width: 100%; /* Membuat gambar memenuhi lebar kolom */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.project h3 {
+    margin: 10px; /* Margin untuk judul proyek */
+}
+
+.project p {
+    margin: 10px; /* Margin untuk deskripsi proyek */
+}
+
+.skill {
+    margin: 15px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 20px; /* Tinggi bar */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: width 0.5s; /* Animasi saat bar berubah */
+}
+
+.html {
+    width: 90%; /* Persentase untuk HTML */
+    background-color: #FFFF00; /* Warna HTML */
+}
+
+.css {
+    width: 69%; /* Persentase untuk CSS */
+    background-color: #1572B6; /* Warna CSS */
+}
+
+.php {
+    width: 89%; /* Persentase untuk PHP */
+    background-color: #E34F26; /* Warna PHP */
+}
+
+.java {
+    width: 79%; /* Persentase untuk Java */
+    background-color: #007396; /* Warna Java */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column; /* Mengatur link dalam kolom */
+    align-items: center; /* Memusatkan link */
+    margin-top: 15px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #333; /* Warna teks */
+    font-size: 18px; /* Ukuran font */
+    margin: 10px 0; /* Margin antar link */
+    display: flex;
+    align-items: center; /* Menjaga gambar dan teks sejajar */
+}
+
+.social-icon {
+    width: 24px; /* Ukuran ikon */
+    height: 24px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.contact-links a:hover {
+    color: #007BFF; /* Warna saat hover */
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
